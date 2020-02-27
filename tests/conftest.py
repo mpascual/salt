@@ -136,6 +136,12 @@ def pytest_addoption(parser):
         help='Print some system information.'
     )
     parser.addoption(
+        '--sys-stats',
+        default=False,
+        action='store_true',
+        help='Print some system information.'
+    )
+    parser.addoption(
         '--transport',
         default='zeromq',
         choices=('zeromq', 'tcp'),
